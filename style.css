@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Clicker+Script&family=Coiny&family=Montserrat:wght@300;400;700&family=Poppins:wght@400;700&family=Rock+Salt&display=swap');
+
+* {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+
+#certificate {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+footer {
+  padding-bottom: 6rem;
+}
+
+/* my projects */
+.keyboard-box {
+  position: relative;
+  background-color: #0c6efd;
+  border-radius: 10px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.keyboard-box::before {
+  content: 'MY';
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  opacity: 0;
+  left: -100px;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover::before {
+  animation: animate 2s linear forwards;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+
+.keyboard-box::after {
+  content: 'PROJECTS';
+  position: absolute;
+  color: #fff;
+  font-size: 4.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 400px;
+  opacity: 0;
+  transform: translate(-50%, 0);
+  left: 50%;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover::after {
+  transform: translate(-50%, 0);
+  left: 50%;
+  opacity: 0.2;
+}
+
+.keyboard-name {
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover .keyboard-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.keyboard-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-59%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover .keyboard-detail-button {
+  opacity: 1;
+  bottom: 20px;
+  
+}
+
+.keyboard-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: -50%, -52%;
+  max-width: 250px;
+  transition: 0.5s;
+}
+.keyboard-box:hover .keyboard-img {
+  transform: translate(-50%, -52%) rotate(-10deg)scale(1.2);
+}
